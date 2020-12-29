@@ -167,7 +167,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/cccbip-ui-kit-apis/ccbp-ui-kit/1609222504211-2020-12-29T06:15:04.211Z/cccbip-ui-kit-apis.zip"
+          "S3Key": "serverless/cccbip-ui-kit-apis/ccbp-ui-kit/1609224241750-2020-12-29T06:44:01.750Z/cccbip-ui-kit-apis.zip"
         },
         "Handler": "introduction-to-dynamic-webapp/sheets-data/index.getSheetData",
         "Runtime": "nodejs12.x",
@@ -185,14 +185,14 @@
         "GetSheetDataLogGroup"
       ]
     },
-    "GetSheetDataLambdaVersionHdCD00ROQvzA5gZWQBVuyXoz0gtTCwpaytXj5ZestI": {
+    "GetSheetDataLambdaVersionGKyIhUNkh2puD8o2weZH59sS4xReEhiC3RLgsMuCX58": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetSheetDataLambdaFunction"
         },
-        "CodeSha256": "KA55dxolqshGTV/ilFdxG4U/ohPQPS1vG+Di8MGS6Os="
+        "CodeSha256": "vkYGxAnj80GC06qVqSPmTy28o7ChoLIGvYGkOAKtImk="
       }
     },
     "WikipediaSearchLambdaFunction": {
@@ -202,7 +202,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/cccbip-ui-kit-apis/ccbp-ui-kit/1609222504211-2020-12-29T06:15:04.211Z/cccbip-ui-kit-apis.zip"
+          "S3Key": "serverless/cccbip-ui-kit-apis/ccbp-ui-kit/1609224241750-2020-12-29T06:44:01.750Z/cccbip-ui-kit-apis.zip"
         },
         "Handler": "introduction-to-dynamic-webapp/wikipedia-search/index.wikipediaSearch",
         "Runtime": "nodejs12.x",
@@ -220,14 +220,14 @@
         "WikipediaSearchLogGroup"
       ]
     },
-    "WikipediaSearchLambdaVersionR0zwEYFGOZ9MO8e4kKWhZudivj8F7q3S38e4z63JYoc": {
+    "WikipediaSearchLambdaVersionbKy1do9oP3njuJHawouX6DIVn97cnDqboPNJ2ZAbo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "WikipediaSearchLambdaFunction"
         },
-        "CodeSha256": "KA55dxolqshGTV/ilFdxG4U/ohPQPS1vG+Di8MGS6Os="
+        "CodeSha256": "vkYGxAnj80GC06qVqSPmTy28o7ChoLIGvYGkOAKtImk="
       }
     },
     "ApiGatewayRestApi": {
@@ -358,7 +358,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1609222490242": {
+    "ApiGatewayDeployment1609224228230": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -455,13 +455,13 @@
     "GetSheetDataLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetSheetDataLambdaVersionHdCD00ROQvzA5gZWQBVuyXoz0gtTCwpaytXj5ZestI"
+        "Ref": "GetSheetDataLambdaVersionGKyIhUNkh2puD8o2weZH59sS4xReEhiC3RLgsMuCX58"
       }
     },
     "WikipediaSearchLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "WikipediaSearchLambdaVersionR0zwEYFGOZ9MO8e4kKWhZudivj8F7q3S38e4z63JYoc"
+        "Ref": "WikipediaSearchLambdaVersionbKy1do9oP3njuJHawouX6DIVn97cnDqboPNJ2ZAbo"
       }
     },
     "ServiceEndpoint": {

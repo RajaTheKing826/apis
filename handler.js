@@ -15,24 +15,6 @@ module.exports.hello = async (event) => {
       sheetId: "1SbqqrS4dgkyZOLBRBW_-M_K8Jqq4EF5_IXkJr3C5VDY",
     };
 
-    // const doc = new GoogleSpreadsheet(
-    //   "1SbqqrS4dgkyZOLBRBW_-M_K8Jqq4EF5_IXkJr3C5VDY"
-    // );
-
-    // await promisify(doc.useServiceAccountAuth)(creds);
-    // const info = await promisify(doc.getInfo)();
-    // const sheet = info.worksheets[0];
-    // const rows = await promisify(sheet.getRows)({ offset: 1 });
-
-    // return {
-    //   statusCode: 200,
-    //   headers: {
-    //     "Access-Control-Allow-Origin": "*",
-    //     "Access-Control-Allow-Credentials": true,
-    //   },
-    //   body: JSON.stringify(rows),
-    // };
-
     await GSheetReader(
       sheetDetails,
       (results) => {
@@ -53,4 +35,3 @@ module.exports.hello = async (event) => {
     };
   }
 };
-//sheets@arched-light-300014.iam.gserviceaccount.com
